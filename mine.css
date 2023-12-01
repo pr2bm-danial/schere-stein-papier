@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(200, 198, 198, 0.904), rgba(249, 249, 249, 0.905)),
+    url(https://ga.de/imgs/93/6/5/8/1/7/7/1/9/tok_79df67e7c8ef29108a1a4d44395f8cbc/w1280_h960_x640_y480_9249c891c14e223b.jpg);
+    background-position: center;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#score {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+
+}
+
+#player, #pc {
+    margin-left: 10px;
+}
+
+#myGame {
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+}
+
+#link {
+    margin-top: 20px;
+}
+
+.images {
+    width: 30px;
+    height:30px;
+    visibility: hidden;
+}

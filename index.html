@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahl raten!</title>
+    <link rel="stylesheet" href="mine.css">
+    <script src="myGame.js"></script>
+</head>
+<body id="body">
+    <h1 class="heading">schere, stein, papier</h1>
+
+    <div id="score">
+        <div>
+            <p>Spieler</p>
+            <p id="player">0</p>
+        </div>
+        <div>
+            <p style="text-align: center;">Ergebnis</p>
+            <p id="final" style="text-align: center;">
+                <img class="images" id="you"> <img style="width: 30px;height:30px;" src="vertical.png"> <img class="images" id="opponent"></p>
+        </div>
+        <div>
+            <p>Computer</p>
+            <p id="pc">0</p>
+        </div>
+    </div>
+    <p id="ergebnis"></p>
+
+    <div id="myGame" class="myGame">
+        <button onclick="schere()">schere</button>
+        <button onclick="stein()">stein</button>
+        <button onclick="papier()">papier</button>
+    </div>
+
+    <p id="link">http://127.0.0.1:5500/schere,stein,papier/index.html</p> 
+    <button onclick="openLink()">copy</button>
+</body>
+</html>
