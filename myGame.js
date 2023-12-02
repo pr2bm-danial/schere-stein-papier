@@ -12,22 +12,44 @@ let tie;
 
 let compared;
 
+
 function schere(){
+    disableButtons();
     scissors = true;
     console.log("scissors");
     checkChoice();
-}
+};
 
 function stein(){
+    disableButtons();
     stone = true;
     console.log("stone");
     checkChoice();
-}
+};
 
 function papier(){
+    disableButtons();
     paper = true;
     console.log("paper");
     checkChoice();
+};
+
+function disableButtons(){
+    let schereButton = document.getElementById('a');
+    let steinButton = document.getElementById('b');
+    let papierButton = document.getElementById('c');
+    schereButton.disabled = true;
+    steinButton.disabled = true;
+    papierButton.disabled = true;
+};
+
+function enableButtons(){
+    let schereButton = document.getElementById('a');
+    let steinButton = document.getElementById('b');
+    let papierButton = document.getElementById('c');
+    schereButton.disabled = false;
+    steinButton.disabled = false;
+    papierButton.disabled = false;
 }
 
 function checkRandom(){
@@ -164,6 +186,7 @@ function updateGame(){
             scheren = false;
             steine = false;
             papieren = false;
+            enableButtons();
             gameScore();
             startGame();
         }, 2500);
@@ -179,6 +202,7 @@ function updateGame(){
             scheren = false;
             steine = false;
             papieren = false;
+            enableButtons();
             startGame();}, 2500);
     }
 }
